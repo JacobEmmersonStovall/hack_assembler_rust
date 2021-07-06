@@ -79,6 +79,5 @@ mod tests {
         assert_eq!(test_table.contains(&"KEY".to_string()), false);
         assert_eq!(test_table.add_entry(&"KEY".to_string(), 0x428), (true, 0x428));
         assert_eq!(test_table.get_address(&"KEY".to_string()), 0x428);
-        
     }
 }
