@@ -1,6 +1,7 @@
 use std::env;
 use std::fs;
 mod symbol_table;
+mod code_translate;
 
 fn get_filename() -> String {
     let args : Vec<String> = env::args().collect();
