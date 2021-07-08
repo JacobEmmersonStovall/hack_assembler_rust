@@ -18,5 +18,6 @@ fn main() {
     let file_contents = fs::read_to_string(&filename)
         .expect("Something went wrong reading the file");
     println!("Filename: {}", filename);
-    println!("File Contents:\n{}", file_contents);
+    assembler::assemble_from_string(&file_contents)
+    //println!("File Contents:\n{}", file_contents);
 }
